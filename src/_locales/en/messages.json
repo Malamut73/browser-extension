@@ -1,0 +1,10 @@
+{
+    "name": {
+        "message": "Saver",
+        "description": "extension name"
+    },
+    "description": {
+        "message": "Copy resume",
+        "description": "extention description"
+    }
+}
