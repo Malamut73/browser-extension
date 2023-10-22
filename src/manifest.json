@@ -15,7 +15,7 @@
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
-            "run_at": "document_idle",
+            "run_at": "document_end",
             "all_frame": false,
             "js": ["js/content.js"],
             "css": ["css/style.css"]
@@ -33,6 +33,37 @@
     ],
     "background": {
         "service_worker": "js/background.js"
+    },
+    
+    "commands": {
+        "downloadCommand": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Left",
+                "mac": "Command+Shift+Left"
+            },
+            "description": "Выполнить скачивание"
+        },
+        "pageCommand": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Down",
+                "mac": "Command+Shift+Down"
+            },
+            "description": "Открыть вкладку"
+        },
+        "fillCommand": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Right",
+                "mac": "Command+Shift+Right"
+            },
+            "description": "Заполнить форму"
+        },
+        "clearCommand": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Up",
+                "mac": "Command+Shift+Up"
+            },
+            "description": "Очистить данные"
+        }
     }
 }
 
