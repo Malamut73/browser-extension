@@ -13,25 +13,17 @@ document.addEventListener('DOMContentLoaded', function () {
     if(fill){
         fill.addEventListener('click', async (e) => {
             chrome.runtime.sendMessage({ fill: true });
-
         });
     }
-
     if(page){
         page.addEventListener('click', function() {
             chrome.runtime.sendMessage({ page: true });
         })
     }
-
     if(clear){
         clear.addEventListener('click', function () {
             chrome.runtime.sendMessage({clear: true})
         })
     }
+
 })
-
-
-
-
-
-

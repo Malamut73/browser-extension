@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,47 @@
     <title>Saver</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    
+
     <div class="wrapper">
+
+        <form id="resume">
+
+            <label for="fio">ФИО</label>
+            <input class="fio" type="text" id="fio" name="fio" required><br><br>
+
+            <label for="gender">Пол:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Выберите пол</option>
+                <option value="Мужчина">Мужчина</option>
+                <option value="Женский">Женский</option>
+            </select><br><br>
+
+            <label for="birthday">Дата рождения:</label>
+            <input class="birthday" type="date" id="birthday" name="birthday" required><br><br>
+
+            <label for="phone">Телефон:</label>
+            <input class="phone" type="text" id="phone" name="phone" required><br><br>
+
+            <label for="email">Email:</label>
+            <input class="email" type="text" id="email" name="email" required><br><br>
+
+            <label for="city">Город:</label>
+            <input class="city" type="text" id="city" name="city" required><br><br>
+
+            <label for="move">Возможность переехать:</label>
+            <input class="move" type="text" id="move" name="move" required><br><br>
+
+            <label for="trip">Возможность к командировкам:</label>
+            <input class="trip" type="text" id="trip" name="trip" required><br><br>
+
+            <label for="wishPosition">Желаемая должность:</label>
+            <input class="wishPosition" type="text" id="wishPosition" name="wishPosition" required><br><br>
+
+            <input type="submit" value="Отправить">
+        </form>
+
         <button class="download" type="button">Скачать резюме</button>
         <button class="fill" type="button">Заполнить резюме</button>
         <button class="page" type="button">Открыть пустую форму</button>
@@ -18,4 +57,5 @@
 
     <script src="/js/popup.js"></script>
 </body>
+
 </html>
